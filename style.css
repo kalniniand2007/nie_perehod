@@ -1,0 +1,270 @@
+.container{
+    max-width: 1300px;
+    margin: 0 auto;
+}
+.section{
+    background-color: wheat;
+}
+.flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.flex_dz{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.tittle{
+    color: #000;
+    font-weight: bold;
+    text-align: center;
+    font-size: 50px;
+    margin-top: 120px;
+    font-family: 'Gloria Hallelujah', cursive;
+    
+}
+.tittle:hover{
+    animation-name: opacha ;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+.section_pop{
+    background-color: wheat;
+    font-family: 'Fugaz One', cursive;
+}
+.tittle_2{
+    padding-top: 30px;
+    text-align: center;
+}
+.section_grid{
+    background-color: wheat;
+}
+.grid{
+        display: grid;
+        grid-template-columns: repeat(2fr);
+        grid-template-rows: repeat(2fr);
+        gap: 20px;
+        width: 300px;
+}
+.image_1{
+    grid-column:1 ;
+    grid-row:2 ;
+}
+.image_2-1{
+    grid-column:1 ;
+    grid-row:1 ;
+}
+.image_3{
+    grid-column: 2;
+    grid-row:2 ;
+}
+.image_4{
+    grid-column: 2;
+    grid-row:1 ;
+}
+.image_1, .image_2-1, .image_3, .image_4{
+    border-radius: 20px;
+}
+.image_4:hover{
+        -webkit-animation: shadow-pop-tr 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+                animation: shadow-pop-tr 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+}
+.image_3:hover{
+    -webkit-animation: shadow-pop-tr 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+            animation: shadow-pop-tr 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+}
+.image_2-1:hover{
+    -webkit-animation: shadow-pop-tr 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+            animation: shadow-pop-tr 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+}
+.image_1:hover{
+    -webkit-animation: shadow-pop-tr 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+            animation: shadow-pop-tr 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+}
+.wrapp_grid{
+    width: 620px;
+    margin: 0 auto;
+}
+#main_button{
+    background-color: wheat;
+    height: 300px;
+    display: inline-block;
+}
+.flex_1{
+    display: flex;
+    flex-direction: row;
+}
+.link_button{
+    text-decoration: none;
+}
+.button{
+    width: 300px;
+    height: 80px;
+    border-radius: 20px;
+    border: 2px solid black;
+    background-image: url(https://img.wprost.pl/img/herbata/77/5d/68dff1ea3xxe98c148233df6846f.jpeg);
+    background-position: center;
+    font-weight: bold;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Fugaz One', cursive;
+    display: block;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+.button:hover{
+    animation-name: button;
+    animation-duration: 3s;
+    animation-iteration-count:infinite;
+    animation-timing-function: ease-in-out;
+}
+.pretittle{
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    color: #000;
+    margin: 0 auto;
+    font-family: 'Fugaz One', cursive;
+    padding-top: 60px;
+}
+.section_pretittle{
+    background-color: wheat;
+}
+@keyframes button{
+    0%{
+        background-color: blueviolet;
+        border-radius: 10px;
+        box-shadow: 5px 5px 10px 10px;
+    }
+    100%{
+        background-color: brown;
+        border-radius: 20px;
+        box-shadow: none;
+    }
+}
+@keyframes opacha{
+    0%{
+        font-size: 60px;
+        color: brown;
+    }
+    100%{
+        font-size: 50px;
+    }
+}
+ @-webkit-keyframes shadow-pop-tr {
+    0% {
+      -webkit-box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
+              box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
+      -webkit-transform: translateX(0) translateY(0);
+              transform: translateX(0) translateY(0);
+    }
+    100% {
+      -webkit-box-shadow: 1px -1px #3e3e3e, 2px -2px #3e3e3e, 3px -3px #3e3e3e, 4px -4px #3e3e3e, 5px -5px #3e3e3e, 6px -6px #3e3e3e, 7px -7px #3e3e3e, 8px -8px #3e3e3e;
+              box-shadow: 1px -1px #3e3e3e, 2px -2px #3e3e3e, 3px -3px #3e3e3e, 4px -4px #3e3e3e, 5px -5px #3e3e3e, 6px -6px #3e3e3e, 7px -7px #3e3e3e, 8px -8px #3e3e3e;
+      -webkit-transform: translateX(-8px) translateY(8px);
+              transform: translateX(-8px) translateY(8px);
+    }
+  }
+  @keyframes shadow-pop-tr {
+    0% {
+      -webkit-box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
+              box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
+      -webkit-transform: translateX(0) translateY(0);
+              transform: translateX(0) translateY(0);
+    }
+    100% {
+      -webkit-box-shadow: 1px -1px #3e3e3e, 2px -2px #3e3e3e, 3px -3px #3e3e3e, 4px -4px #3e3e3e, 5px -5px #3e3e3e, 6px -6px #3e3e3e, 7px -7px #3e3e3e, 8px -8px #3e3e3e;
+              box-shadow: 1px -1px #3e3e3e, 2px -2px #3e3e3e, 3px -3px #3e3e3e, 4px -4px #3e3e3e, 5px -5px #3e3e3e, 6px -6px #3e3e3e, 7px -7px #3e3e3e, 8px -8px #3e3e3e;
+      -webkit-transform: translateX(-8px) translateY(8px);
+              transform: translateX(-8px) translateY(8px);
+    }
+  }
+@media screen and (max-width:1200px){
+    .container{
+        max-width: 1300px;
+        margin: 0 auto;
+    }
+    .flex_1{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width:1090px){
+    .container{
+        max-width: 1040px;
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width:800px){
+    .container{
+        max-width: 750px;
+        margin: 0 auto;
+    }
+    .flex{
+        flex-direction: column;
+    }
+    .wrapp_image{
+        width: 400px;
+        margin: 0 auto;
+    }
+    .flex_dz{
+        flex-direction: column-reverse;
+    }
+    .image_pop{
+        width: 400px;
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width:550px){
+    .container{
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    .grid{
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    .wrapp_grid{
+        width: 500px;
+    }
+}
+@media screen and (max-width:480px){
+    .container{
+        max-width: 430px;
+        margin: 0 auto;
+    }
+    .wrapp_grid{
+        width: 400px;
+    }
+}
+@media screen and (max-width:360px){
+    .container{
+        max-width: 320px;
+        margin: 0 auto;
+    }
+    .wrapp_grid{
+        width: 300px;
+    }
+    .wrapp_image, .image_pop{
+        width: 300px;
+    }
+    .image_2, .image{
+        width: 300px;
+        margin: 0 auto;
+        display: block;
+    }
+}
+@media screen and (max-width:320px){
+    /* .container{
+        max-width: 1300px;
+        margin: 0 auto;
+    }
+} */
+  
+
+
+
+
+
